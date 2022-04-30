@@ -1,0 +1,212 @@
+.userSingle {
+    display: flex;
+    width: 100%;
+
+    .singleContainer {
+        flex: 6;
+
+        .singleTop {
+            padding: 20px;
+            display: flex;
+            gap: 20px;
+
+            .singleLeft {
+                flex: 1;
+                background: linear-gradient(45deg, #c2c1c1, #f3f3f383);
+                box-shadow: 2px 4px 10px 1px rgba(219, 218, 218, 0.47);
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47),
+                    5px 10px 20px #ffffff;
+                padding: 20px;
+                position: relative;
+
+                .editButton {
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    padding: 5px;
+                    font-size: 14px;
+                    font-weight: 600;
+                    letter-spacing: 1px;
+                    color: #7451f8;
+                    background-color: #7551f84d;
+                    cursor: pointer;
+                    border-radius: 0px 0px 0px 5px;
+                    box-shadow: 1px 4px 5px 1px rgba(219, 218, 218, 0.47);
+                    -webkit-box-shadow: 1px 4px 5px 1px rgba(0, 0, 0, 0.47),
+                        5px 10px 20px #ffffff;
+
+                    &:hover {
+                        color: rgb(8, 8, 8);
+                        background-color: #3bf8644d;
+                        transition: 1s all ease-in-out;
+                        box-shadow: 2px 2px 2px 2px rgba(219, 218, 218, 0.47);
+                        -webkit-box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.47),
+                            5px 10px 20px #ffffff;
+                    }
+                }
+
+                .title {
+                    margin-top: -0.25rem;
+                    margin-bottom: 1rem;
+                    font-size: 26px;
+                    color: rgb(75, 75, 75);
+                }
+
+                .item {
+                    display: flex;
+                    gap: 20px;
+
+                    .itemImg {
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .details {
+                        .itemTitle {
+                            color: #555;
+                            font-size: 18px;
+                        }
+
+                        .detailItem {
+                            margin: 5px 0;
+                            font-size: 16px;
+
+                            .itemKey {
+                                font-weight: bold;
+                                color: crimson;
+                            }
+
+                            .itemValue {
+                                font-weight: normal;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .singleRight {
+                flex: 2;
+                box-shadow: 2px 4px 10px 1px rgba(219, 218, 218, 0.47);
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47),
+                    5px 10px 20px #ffffff;
+
+                .singleChart {
+                    box-shadow: 0px 0px 0px 0px white !important;
+                }
+            }
+        }
+
+        .bottom {
+            background: linear-gradient(45deg, #c2c1c1, #f3f3f383);
+            box-shadow: 2px 4px 10px 1px rgba(219, 218, 218, 0.47);
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47),
+                5px 10px 20px #ffffff;
+            padding: 10px;
+            margin: 20px;
+            display: flex;
+
+            h1 {
+                color: rgb(75, 75, 75);
+                font-size: 20px;
+            }
+
+            .left {
+                flex: 1;
+                text-align: center;
+                position: relative;
+
+                img {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                    object-fit: cover;
+                    position: absolute;
+                    top: 20%;
+                    left: 30%;
+                }
+            }
+
+            .right {
+                flex: 4;
+                margin-top: 1rem;
+
+                form {
+                    display: flex;
+                    flex-wrap: wrap;
+                    gap: 20px;
+                    justify-content: space-around;
+                    padding-bottom: 2rem;
+
+                    .uploadImg {
+                        margin-top: 1.2rem;
+
+                        label {
+                            cursor: pointer;
+                        }
+                    }
+
+                    .formInput {
+                        width: 40%;
+                        gap: 20px;
+
+                        .icon {
+                            cursor: pointer;
+                        }
+
+                        label {
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                        }
+
+                        input {
+                            width: 100%;
+                            padding: 5px;
+                            border: none;
+                            border-bottom: 1px solid gray;
+                        }
+                    }
+
+                    button {
+                        width: 150px;
+                        padding: 10px;
+                        border: none;
+                        background-color: teal;
+                        color: white;
+                        font-size: 16px;
+                        font-weight: 600;
+                        cursor: pointer;
+                        margin-top: 10px;
+                        margin-bottom: 1rem;
+                        margin-left: 1.5rem;
+
+                        &:hover {
+                            background-color: white;
+                            color: teal;
+                            font-weight: 700;
+                            transition: 0.7s all ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+
+        .singleBottom {
+            background: linear-gradient(45deg, #c2c1c1, #f3f3f383);
+            box-shadow: 2px 4px 10px 1px rgba(219, 218, 218, 0.47);
+            -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47),
+                5px 10px 20px #ffffff;
+            padding: 20px;
+            margin: 10px 20px;
+
+            .title {
+                margin-top: -0.25rem;
+                margin-bottom: 1rem;
+                font-size: 26px;
+                color: rgb(75, 75, 75);
+            }
+        }
+    }
+}
